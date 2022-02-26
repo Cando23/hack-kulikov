@@ -1,3 +1,3 @@
 # hack-kulikov
-## Only magic no hacking!!!
-### True open source project.
+Only magic no hacking!!!
+True open source project.
