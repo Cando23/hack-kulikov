@@ -48,5 +48,3 @@ async function hackEpam() {
   await submitAnswers();
   justPrintResults();
 }
-
-hackEpam();
