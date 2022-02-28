@@ -44,7 +44,7 @@ function justPrintResults() {
   setTimeout(copyCorrectAnswers, 4000);
 }
 async function hackEpam() {
-  await setAnswsers(fieldSets);
+  await setAnswsers();
   await submitAnswers();
   justPrintResults();
 }
