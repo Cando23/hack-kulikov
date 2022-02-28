@@ -1,4 +1,5 @@
-function setAnswsers(fieldSets) {
+const fieldSets = document.getElementsByTagName("fieldset");
+function setAnswsers() {
   return new Promise((res) => {
     for (let i = 0; i < fieldSets.length; i++) {
       const answsers = fieldSets[i].querySelectorAll("span");
@@ -22,7 +23,7 @@ function displayCorrectAnswers() {
     displayBtns[i].click();
   }
 }
-function copyCorrectAnswers(fieldSets) {
+function copyCorrectAnswers() {
   let text = "";
   const isCorrect = (label) => Boolean(label.querySelector(".correct"));
   for (let i = 0; i < fieldSets.length; i++) {
@@ -38,12 +39,14 @@ function copyCorrectAnswers(fieldSets) {
   }
   console.log(text);
 }
+function justPrintResults() {
+  setTimeout(displayCorrectAnswers, 1000);
+  setTimeout(copyCorrectAnswers, 4000);
+}
 async function hackEpam() {
-  const fieldSets = document.getElementsByTagName("fieldset");
   await setAnswsers(fieldSets);
   await submitAnswers();
-  setTimeout(displayCorrectAnswers, 2000);
-  setTimeout(copyCorrectAnswers, 5000, fieldSets);
+  justPrintResults();
 }
 
 hackEpam();
