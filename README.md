@@ -14,7 +14,7 @@ function justPrintResults() {
 
 justPrintResults()
 ```
-If you lazy :
+If you are lazy and don't want to pass the test :
 ```javascript
 async function hackEpam() {
   await setAnswsers();
