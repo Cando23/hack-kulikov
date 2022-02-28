@@ -5,11 +5,11 @@ This code do magic on Learn.epam.com and prints the results of the test to the c
 ### How to use : ###
 On the test page copypaste all the functions from [epam.js] to the browser console.
 
-If you passed the test and want to copy the correct answers :
+If you passed the test and want to copy the correct answers, write :
 ```javascript
 justPrintResults()
 ```
-If you are lazy and don't want to pass the test :
+If you are lazy and don't want to pass the test, write :
 ```javascript
 hackEpam()
 ```
