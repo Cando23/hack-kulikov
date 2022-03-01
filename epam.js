@@ -33,12 +33,12 @@ function copyCorrectAnswers() {
   }
   console.log(text);
 }
-function justPrintResults() {
+function printResults() {
   setTimeout(displayCorrectAnswers, 1000);
   setTimeout(copyCorrectAnswers, 4000);
 }
 function hackEpam() {
   setAnswsers();
   submitAnswers();
-  justPrintResults();
+  printResults();
 }

@@ -7,7 +7,7 @@ On the test page copypaste all the functions from [epam.js] to the browser conso
 
 If you passed the test and want to copy the correct answers, write :
 ```javascript
-justPrintResults()
+printResults()
 ```
 If you are lazy and don't want to pass the test, write :
 ```javascript
