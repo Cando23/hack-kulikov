@@ -1,21 +1,15 @@
 const fieldSets = document.getElementsByTagName("fieldset");
 function setAnswsers() {
-  return new Promise((res) => {
     for (let i = 0; i < fieldSets.length; i++) {
       const answsers = fieldSets[i].querySelectorAll("span");
       answsers[Math.floor(Math.random() * 4)].click();
     }
-    res();
-  });
 }
 function submitAnswers() {
-  return new Promise((res) => {
     const submits = document.querySelectorAll(".submit");
     for (let i = 0; i < submits.length; i++) {
       submits[i].click();
     }
-    res();
-  });
 }
 function displayCorrectAnswers() {
   const displayBtns = document.querySelectorAll(".problem-action-btn");
@@ -43,8 +37,8 @@ function justPrintResults() {
   setTimeout(displayCorrectAnswers, 1000);
   setTimeout(copyCorrectAnswers, 4000);
 }
-async function hackEpam() {
-  await setAnswsers();
-  await submitAnswers();
+function hackEpam() {
+  setAnswsers();
+  submitAnswers();
   justPrintResults();
 }
