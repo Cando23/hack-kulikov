@@ -1,7 +1,7 @@
 # hack-kulikov
 **Only magic no hacking!!!**
 ### Purpose : ###
-This code do magic on Learn.epam.com and prints the results of the test to the console. 
+This code do magic on [learn.epam.com] and prints the results of the test to the console. 
 ### How to use : ###
 On the test page copypaste all the functions from [epam.js] to the browser console.
 
@@ -15,3 +15,4 @@ hackEpam()
 ```
 
 [epam.js]:https://github.com/Cando23/hack-kulikov/blob/main/epam.js
+[learn.epam.com]:https://learn.epam.com/
